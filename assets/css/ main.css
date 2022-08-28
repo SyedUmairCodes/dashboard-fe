@@ -40,9 +40,10 @@ h6 {
 }
 
 .card {
-  width: 200px;
+  flex-grow: 1;
   padding: 1rem;
   background-color: var(--card-color);
+  border-radius: 0.7rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -125,6 +126,7 @@ h6 {
 .card-progress-bar {
   position: relative;
   width: 8rem;
+  margin: auto;
   height: 8rem;
   border-radius: 50%;
   background: conic-gradient(
@@ -134,15 +136,15 @@ h6 {
 }
 
 .card-progress-bar::after {
-  content: "33%";
+  content: "";
   display: block;
   position: absolute;
-  margin: auto;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  width: 85%;
-  height: 85%;
+  width: 78%;
+  height: 78%;
+  text-align: center;
   border-radius: inherit;
   background: var(--card-color);
 }
@@ -151,7 +153,6 @@ h6 {
 
 .card-growth {
   width: 50%;
-  padding: 1.5rem;
   text-align: center;
 }
 .card-growth-headline {
@@ -165,6 +166,10 @@ h6 {
   justify-content: space-evenly;
   gap: 1rem;
   height: 8rem;
+  background: repeating-linear-gradient(
+    var(--accent-color) 0% 0.5%,
+    transparent 0.5% 20%
+  );
 }
 
 .card-barchart > div {
@@ -173,7 +178,19 @@ h6 {
 }
 
 .card-barchart > div > div {
-  width: 1.5rem;
+  width: 1.25rem;
+}
+
+/* Single bar chart */
+
+.card-barchart.is-gauge-chart > div > div {
+  width: 3rem;
+}
+
+/* Regions Card */
+.card-regions {
+  width: 25%;
+  text-align: center;
 }
 
 .card-bar-primary {
