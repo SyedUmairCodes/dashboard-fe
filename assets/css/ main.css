@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --background-color: #edede9;
+  --primary-color: #2667ff;
+  --text-color: #023047;
+  --card-color: #ffffff;
+  --accent-color: #87bfff;
+
+  --legth-md-1: 1rem;
+  --legth-md-125: 1.25rem;
+  --legth-md-15: 1.5rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: var(--legth-md-1);
+}
+
+.card {
+  width: 200px;
+  padding: 1rem;
+  background-color: var(--card-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.card.has-extra-padding {
+  padding: 2rem 1rem;
+}
+
+.card-icon {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 2rem;
+  background: var(--accent-color);
+}
+
+.card-headline {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.card-h2.has-bottom-margin {
+  margin-bottom: 2rem;
+}
+
+.card-h3 {
+  margin-bottom: var(--legth-md-1);
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-h4 {
+  margin-bottom: 4px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.card-list {
+  display: flex;
+  gap: 1.75rem;
+  width: 50%;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-list-badge {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--accent-color);
+}
+
+/* Customer engagement card styles */
+.card-progress {
+  padding: 1.5rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-progress-bar {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--primary-color) 0% 33%,
+    var(--accent-color) 0% 33%
+  );
+}
+
+.card-progress-bar::after {
+  content: "33%";
+  display: block;
+  position: absolute;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 85%;
+  height: 85%;
+  border-radius: inherit;
+  background: var(--card-color);
+}
+
+/* Growth card styles */
+
+.card-growth {
+  width: 50%;
+  padding: 1.5rem;
+  text-align: center;
+}
+.card-growth-headline {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-barchart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  gap: 1rem;
+  height: 8rem;
+}
+
+.card-barchart > div {
+  display: grid;
+  place-items: end;
+}
+
+.card-barchart > div > div {
+  width: 1.5rem;
+}
+
+.card-bar-primary {
+  height: 40px;
+  width: 10px;
+  background: var(--primary-color);
+}
+.card-bar-default {
+  height: 20px;
+  width: 10px;
+  background: var(--accent-color);
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
