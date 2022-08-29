@@ -1,0 +1,53 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+/* CSS Variables */
+
+root {
+  /* Main colors */
+  --background-color: #edede9;
+  --primary-color: #2667ff;
+  --accent-color: #87bfff;
+  --text-color: #023047;
+  --card-color: #ffffff;
+  --disabled-color: #888888;
+
+  /* Margins and Lengths  */
+  --length-sm1: 0.3rem;
+  --length-sm2: 0.6rem;
+  --length-sm3: 0.8rem;
+
+  --length-md1: 1rem;
+  --length-md2: 1.4rem;
+  --length-md3: 1.8rem;
+
+  --length-lg1: 2.2rem;
+  --length-lg2: 3.3rem;
+  --length-lg3: 4.4rem;
+
+  --length-xl1: 6.5rem;
+  --length-xl2: 8.5rem;
+  --length-xl3: 10.5rem;
+}
+/* Body styles */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1;
+}
+/* Button styles */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

@@ -8,7 +8,9 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="./assets/css/ main.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link rel="stylesheet" href="./assets/css/cards.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
     <title>Dashboard</title>
   </head>
   <body>
@@ -130,6 +132,89 @@
             <div>
               <div class="card-bar-default" style="height: 20px"></div>
               <div class="card-bar-primary" style="height: 70px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third row of cards -->
+      <div class="row">
+        <!-- Author card -->
+        <div class="card card-authors has-extra-padding">
+          <header class="card-header">
+            <h3 class="card-h3 no-bottom-margin">Authors</h3>
+            <span class="uil uil-ellipsis-v card-header-icon"></span>
+          </header>
+          <ul class="avatar-list">
+            <!-- First avatar -->
+            <li>
+              <img class="avatar" src="./assets/images/joe.png" />
+              <span class="avatar-text-block">
+                <span class="avatar-title">Joe Harrison </span>
+                <span class="avatar-notes">HTML, CSS, React, Node</span>
+              </span>
+            </li>
+            <!-- Second avatar -->
+            <li>
+              <img class="avatar" src="./assets/images/dan.png" />
+              <span class="avatar-text-block">
+                <span class="avatar-title">Dan Romero</span>
+                <span class="avatar-notes">Figma, Figjam, Notion, CSS</span>
+              </span>
+            </li>
+            <!-- Third avatar -->
+            <li>
+              <img class="avatar" src="./assets/images/eugene.png" />
+              <span class="avatar-text-block">
+                <span class="avatar-title">Andrew Eugene</span>
+                <span class="avatar-notes">Figma, XD, Photoshop</span>
+              </span>
+            </li>
+            <!-- Fourth avatar -->
+            <li>
+              <img class="avatar" src="./assets/images/mike.png" />
+              <span class="avatar-text-block">
+                <span class="avatar-title">Mike van Dijsel</span>
+                <span class="avatar-notes">Figma, Sketch, Illustrator</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- Timeline card -->
+        <div class="card card-activity">
+          <header class="card-header">
+            <h3 class="card-h3 no-bottom-margin">Activity</h3>
+            <span class="card-header-icon uil uil-ellipsis-v"></span>
+          </header>
+          <div class="timeline">
+            <div class="timeline-row primary">
+              <span class="timeline-when"> 9:00am </span>
+              <span class="timeline-badge"></span>
+              <span class="timeline-text">
+                Mike updated his latest Figma designs entitled: "Turquoise
+                Dashboard Concept V3.9".
+              </span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-when"> 10:18am </span>
+              <span class="timeline-badge"></span>
+              <span class="timeline-text">
+                Joe pushed some awesome CSS code to his master repository!
+              </span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-when"> 11:51am </span>
+              <span class="timeline-badge"></span>
+              <span class="timeline-text">
+                Dan started to create Figma concepts for two clients with scope
+                for many projects for both.
+              </span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-when"> 14:29am </span>
+              <span class="timeline-badge"></span>
+              <span class="timeline-text">
+                Joe marked two User Story tickets as done and completed.
+              </span>
             </div>
           </div>
         </div>
