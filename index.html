@@ -3,6 +3,7 @@
   <head>
     <title>HTML CSS Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles and fonts -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -19,6 +20,21 @@
     <link rel="stylesheet" href="./assets/css/cards.css" />
   </head>
   <body>
+    <!-- Pre loader -->
+    <div class="preloader">
+      <div class="spinner"></div>
+    </div>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <span class="sidebar-top uil uil-adjust"></span>
+      <div class="sidebar-middle">
+        <span class="sidebar-top uil uil-plus"></span>
+        <span class="sidebar-top uil uil-tag"></span>
+        <span class="sidebar-top uil uil-bookmark"></span>
+      </div>
+      <span class="sidebar-bottom uil uil-setting"></span>
+    </aside>
+    <!-- Main container -->
     <div class="container">
       <!-- First card -->
       <div class="card card-headline card-headline1">
@@ -133,7 +149,20 @@
       <div class="card card-author">
         <header class="card-header">
           <h3 class="card-h3 no-bottom-margin">Authors</h3>
-          <span class="card-header-icon uil uil-ellipsis-v"></span>
+          <div class="dropdown-wrapper">
+            <input type="checkbox" class="dropdown-input" id="dropdown-input" />
+            <label class="dropdown-label" for="dropdown-input">
+              <span class="card-header-icon uil uil-ellipsis-v"></span>
+            </label>
+            <div class="dropdown-menu">
+              <button class="dropdown-menu-button">Some Action</button>
+              <button class="dropdown-menu-button">Another Action</button>
+              <button class="dropdown-menu-button">Click Me</button>
+              <button class="dropdown-menu-button has-divider">
+                Delete Item
+              </button>
+            </div>
+          </div>
         </header>
         <ul class="avatar-list">
           <li>
